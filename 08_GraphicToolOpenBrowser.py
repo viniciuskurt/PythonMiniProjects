@@ -1,16 +1,9 @@
-#graphic tool to open browser
+T = 1
+M = 5
+C = 10
 
-import webbrowser
-from tkinter import *
+while T < M:
+    C = C * (1 + T)
+    T = T + 1
 
-root = Tk( )
-
-root.title('Open Browser')
-root.geometry('300x200')
-
-def google():
-    webbrowser.open('www.google.com')
-
-mygoogle = Button(root, text='Open Google', command=google).pack(pady=20)
-
-root.mainloop()
+print(C)
